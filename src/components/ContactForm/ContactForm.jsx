@@ -34,9 +34,9 @@ const schema = yup.object().shape({
     .required(),
   number: yup
     .string()
-    .phone(
-      'UA',
-      true,
+    .trim()
+    .matches(
+      /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/,
       'Phone number must be a valid phone number for region UA, digits and can contain spaces, dashes, parentheses and can start with +'
     )
     .required(),
