@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import 'yup-phone';
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
